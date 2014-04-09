@@ -12,9 +12,26 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <GroupBox Grid.Row="0" Header="Paramètres du numéro" Margin="4">
+                <StackPanel Grid.Row="0" Orientation="Vertical" Margin="4">
+                    <TextBlock Text="La première étape va consister à télécharger les images constituant chaque page du numéro souhaité :" />
+                    <TextBlock Text="- Ouvrir Firefox" />
+                    <TextBlock Text="- Se connecter au site des archives de Science&amp;Vie" />
+                    <TextBlock Text="- Ouvrir le numéro souhaité" />
+                    <TextBlock Text="- Configurer le visualisateur en mode 'Widelook HTML5'" />
+                    <TextBlock Text="- Ouvrir Firebug" />
+                    <TextBlock Text="- Sélectionner l'onglet 'Net'" />
+                    <TextBlock Text="- Sélectionner 'All'" />
+                    <TextBlock Text="- Zoomer au maximum sur une partie de la page du numéro" />
+                    <TextBlock Text="- Dans le panneau de Firebug, faire un clic droit sur la dernière ligne apparue dans la liste des requêtes et choisir 'Copy Location'" />
+                    <TextBlock Text="- Coller dans la zone de texte 'Url' ci-dessous" />
+                    <TextBlock Text="- Remplir la zone de texte 'Nb pages' (dans le visualisateur, cliquer sur 'Menu' pour afficher l'aperçu de toutes les pages ; en bas à droite se trouve le nombre de pages)" />
+                </StackPanel>
+
+                <GroupBox Grid.Row="1" Header="Paramètres du numéro" Margin="4">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
@@ -27,18 +44,22 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Numéro" Margin="0,2,5,2" VerticalAlignment="Center" />
-                        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Numéro}" />
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Url" Margin="0,2,5,2" VerticalAlignment="Center" />
+                        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Url}" />
 
-                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Nb pages" Margin="0,2,5,2" VerticalAlignment="Center" />
-                        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding NombrePages}" />
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Numéro" Margin="0,2,5,2" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Numéro}" />
 
-                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Url" Margin="0,2,5,2" VerticalAlignment="Center" />
-                        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Url}" />
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Nb pages" Margin="0,2,5,2" VerticalAlignment="Center" />
+                        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding NombrePages}" />
                     </Grid>
                 </GroupBox>
 
-                <Grid Grid.Row="1">
+                <StackPanel Grid.Row="2" Orientation="Vertical" Margin="4">
+                    <TextBlock Text="blablabla :" />
+                </StackPanel>
+
+                <Grid Grid.Row="3">
                     <Button Content="Générer le fichier pour DownloadThemAll" HorizontalAlignment="Center" Padding="2" />
                 </Grid>
             </Grid>
