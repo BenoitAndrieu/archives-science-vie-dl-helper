@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<metalink xmlns="http://www.metalinker.org/" type="static" version="3.0" generator="DownThemAll!/2.0" a0:version="2.0.16" xmlns:a0="http://www.downthemall.net/properties#" pubdate="Wed, 09 Apr 2014 05:56:53 GMT">
+<!--metalink as exported by DownThemAll! on firefox/28.0 May contain DownThemAll! specific information in the DownThemAll! namespace: http://www.downthemall.net/properties#-->
+	<files>
+		<file name="pvTile.asp" a0:num="undefined" a0:startDate="1397022827600">
+			<description>test1</description>
+			<resources>
+				<url type="http" preference="100" a0:usable="http://scienceetvie-pvgpsla5.immanens.com/fr/pvTile.asp?zones=1&amp;nonext=1&amp;version=1&amp;pub=003263&amp;num=1159&amp;viewer=WH5&amp;t=0_0_0_5_8&amp;pag=2">
+					http://scienceetvie-pvgpsla5.immanens.com/fr/pvTile.asp?zones=1&amp;nonext=1&amp;version=1&amp;pub=003263&amp;num=1159&amp;viewer=WH5&amp;t=0_0_0_5_8&amp;pag=2
+				</url>
+			</resources>
+			<size>2470</size>
+		</file>
+		<file name="pvTile.asp" a0:num="undefined" a0:startDate="1397022894575">
+			<resources>
+				<url type="http" preference="100" a0:usable="http://scienceetvie-pvgpsla5.immanens.com/fr/pvTile.asp?zones=1&amp;nonext=1&amp;version=1&amp;pub=003263&amp;num=1159&amp;viewer=WH5&amp;t=0_0_0_5_7&amp;pag=2">
+					http://scienceetvie-pvgpsla5.immanens.com/fr/pvTile.asp?zones=1&amp;nonext=1&amp;version=1&amp;pub=003263&amp;num=1159&amp;viewer=WH5&amp;t=0_0_0_5_7&amp;pag=2
+				</url>
+				</resources>
+			<size>9585</size>
+		</file>
+	</files>
+</metalink>
